@@ -3,7 +3,7 @@ body {
     font-size: 18px;
     line-height: 34px;
     color: #777;
-    background: url("../images/concrete_seamless.png");
+    background: url("assets/background.png");
   }
   
   * {
@@ -62,16 +62,27 @@ body {
     background: #fff;
     border-bottom: 2px solid #ccc;
   }
+  *{
+    outline: 1px dotted black;
+  }
+
+  div {
+    outline: 3px dotted red;
+
+  }
+
+  image {
+
+  }
   
   #logo {
     float: left;
     width: 250px;
-    height: 90px;
     font-family: Georgia, Times, "Times New Roman", serif;
     font-size: 30px;
     font-weight: 700;
-    line-height: 90px;
     color: #fff;
+    padding: 30px;
     text-align: center;
     text-decoration: none;
     background: #4aaaa5;
@@ -120,7 +131,8 @@ body {
   /* main */
   
   #main-container {
-    padding-top: 130px;
+    padding: 130px 15px 15px 15px;
+    
     min-height: calc(100vh - 70px);
   }
   
@@ -214,4 +226,60 @@ body {
     cursor: pointer;
     background: #4aaaa5;
     border: 0 none;
+  }
+
+  @media screen and (max-width: 980px) {
+    .main-section {
+    width: 650px;
+    margin: 0px 50px;
+
+}
+    
+  }
+
+  @media screen and (max-width: 768px) {
+    .main-section {
+    width: 100%;
+    margin: 0px auto;
+
+    } 
+  }
+
+
+  @media screen and (max-width: 640px) {
+
+    #logo {
+      display: block;
+      height: none;
+      float: none; 
+      min-width: 100%;
+
+    
+    }
+      
+
+    nav {
+      margin:25px auto;
+      text-align: center;
+      float: none;    
+      min-width:100%;
+
+      
+    }
+    
+    .auth-image {
+     margin-right: 0;
+     width: 100%;
+
+    }
+
+    .work {
+    float: none;
+    margin: auto !important; }
+
+    #masthead {
+      position: fixed;
+    }
+    
+
   }
